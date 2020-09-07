@@ -1,3 +1,5 @@
+import {ModuleInterface} from "../interfaces/module.interface";
+
 class Student {
     constructor(private name?: string, private age?: number, private grade?: number) { }
 
@@ -32,7 +34,7 @@ class Student {
     }
 }
 
-export class StudentApp {
+export class StudentApp implements ModuleInterface {
     public init(): void {
         const student1: Student = new Student("Сергей", 20, 5);
         const student2: Student = new Student();
