@@ -37,14 +37,14 @@ export class StudentApp {
         const student1: Student = new Student("Сергей", 20, 5);
         const student2: Student = new Student();
 
-        student2.set("Сергей", 20, 5);
+        student2.set("Йегрес", 5, 20);
 
         console.log('Student 1');
         console.log(`Age: ${student1.getAge()}\nName: ${student1.getName()}\nGrade: ${student1.getGrade()}`);
 
         console.log('<--------------------------->');
 
-        console.log('Student 1');
-        console.log(`Age: ${student1.getAge()}\nName: ${student1.getName()}\nGrade: ${student1.getGrade()}`);
+        console.log('Student 2');
+        console.log(`Age: ${student2.getAge()}\nName: ${student2.getName()}\nGrade: ${student2.getGrade()}`);
     }
 }
